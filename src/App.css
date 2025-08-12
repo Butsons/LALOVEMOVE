@@ -1,0 +1,64 @@
+.cart-icon {
+  position: relative;
+  font-size: 1.5rem;
+  color: #810101;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-icon:hover {
+  color: #c01102;
+  transition: color 0.2s ease;
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #f53d2d; /* Shopee orange/red */
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 18px;
+  text-align: center;
+  box-shadow: 0 0 0 2px white;
+  pointer-events: none;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* nav-links aligned to left */
+.nav-links {
+  flex: 1;
+}
+
+/* logo centered */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #f53d2d; /* Shopee orange */
+  user-select: none;
+  pointer-events: none; /* so it doesn't interfere with clicks */
+}
+
+/* cart-link aligned to right */
+.cart-link {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,156 @@
+.product-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.product-list-container h2 {
+  font-size: 2rem;
+  color: #f53d2d; /* Shopee orange */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.product-list-container > button {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.6rem 1.2rem;
+  background-color: #f53d2d;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-list-container > button:hover {
+  background-color: #d83625;
+}
+
+.alert {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d0e9c6;
+  padding: 12px 20px;
+  margin: 1rem auto;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.product-card strong {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.product-card small {
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.product-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-buttons button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.product-buttons button:nth-child(1) {
+  background-color: #8b0101; /* blue - edit */
+}
+
+.product-buttons button:nth-child(1):hover {
+  background-color: #d61010;
+}
+
+.product-buttons button:nth-child(2) {
+  background-color: #8b0101; /* red - delete */
+}
+
+.product-buttons button:nth-child(2):hover {
+  background-color: #d61010;
+}
+
+.product-buttons button:nth-child(3) {
+  background-color: #8b0101; /* orange - add to cart */
+}
+
+.product-buttons button:nth-child(3):hover {
+  background-color: #d61010;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+}

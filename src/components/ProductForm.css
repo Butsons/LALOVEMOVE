@@ -1,0 +1,75 @@
+/* ProductForm.css */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form input[type="file"] {
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+
+.form img {
+  max-width: 150px;
+  border-radius: 8px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+}
+
+.form button[type="submit"] {
+  background-color: #f53d2d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #d83725;
+}
+
+.close-button {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  margin-bottom: -10px;
+  margin-right: -10px;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #333;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
